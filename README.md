@@ -26,12 +26,12 @@ This program will use SNPM protocol for getting information about routers, so we
 
 _This is a project for PSI course !_
 
-### How do the application work ?
+### 1. How do the application work ?
 
 Basically, the application will start from the address of the first router with DHCP. Then, it will find recursively all connected routers and interfaces
 of the autonomous system area thanks to the routing tables. And so on, until it found every routers of the AS.
 
-### Installation of the dependencies 
+### 2. Installation of the dependencies 
 
 Before using this application, you will have to set up the project and install all the libraries needed.
 
@@ -56,7 +56,6 @@ write
 - Then, you will select the node you want, and install all the libraries needed. (which are nano, python3, pip, scapy, pysnmp)
 (If you are using the GNS3 Example project, python3 and scapy are already installed). But sometimes, you have to update first because the installation cannot work successfully
 
-**Installation of libraries.**
 ```shell
 #Update the linux node
 apt-get update 
@@ -78,7 +77,7 @@ pip3 uninstall pyasn1
 pip3 install pyasn1==0.4.8
 ```
 
-### How can we use this application ?
+### 3. How can we use this application ? 
 
 - You just have to import the python code by creating a python file with nano for example or use GitHub clone.
 - By using nano,you just have to create a file by using the command :
